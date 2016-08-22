@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>收藏夹</title>
+	<link rel="shortcut icon" href="images/favorite.ico">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<script src="js/lib.js"></script>
+</head>
+<body id="body">
+	<div class="cloud" id="cloud"></div>
+	<div class="star" id="star" style="display:none;">
+		<button id="backcloud" class="backcloud"></button>
+		<ul id="ulll"></ul>
+	</div>
+	<div class="content" id="content">
+		<header>
+			<span>-->萌得连神都放弃的收藏夹Ծ ̮ Ծ</span>
+		</header>
+		<nav class="all" id="all">    <!--显示书签的全部分类标签-->
+			<ul id="alltags">
+
+			</ul>
+			<button id="xiala" class="xiala" title="下拉有惊喜" style="background-image: url(images/arrow.png);"></button>
+		</nav>
+		<span id="showadd" title="添加书签">Add</span> 
+		<div class="findall" id="findall"><!--当前文件夹下的书签内容-->
+			<ul id="container" class="container">
+			</ul>
+		</div>
+		<!--  背景遮罩  -->
+		<div id="black_shadow"></div>
+		<!--  点开后的大图  -->
+		<article id="formbox" class="formbox">
+			<span id="span">X</span>
+			<form id="myform" name="myform">
+				<table>
+					<tr id="tr">
+						<td>名字：</td>
+						<td><input type="text" name="flabel" id="flabel" /></td>
+					</tr>
+					<tr id="tr2">
+						<td>网址：</td>
+						<td><input value="http://" type="text" name="furl" id="furl" /></td>
+					</tr>
+					<tr id="tr3">
+						<td>分类：</td>
+						<td><input type="text" name="ftags" id="ftags" /></td>
+					</tr>
+					<tr class="nounder">
+						<td>描述：</td>
+						<td><textarea name="fdesc" id="fdesc" cols="36" rows="3"></textarea></td>
+					</tr>
+				</table>
+
+			</form>
+			<b id="add">ADD</b>
+		</article>
+	</div>
+	<div id="jiazai" style="display:none;"></div>
+	<a href="#top"><div id="toup" style="bottom: -70px;"></div></a>
+	<script src="js/index.js"></script>
+</body>
+</html>
